@@ -3,4 +3,11 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+
+
+  # GET localhost:3000/about
+  root to: "pages#home"
+  get "/about", to: "pages#about"
+  get "/contact", to: "pages#contact"
+  # Verb "/path", to: "controller#action"
 end
